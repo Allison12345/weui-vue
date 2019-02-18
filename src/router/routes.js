@@ -1,9 +1,8 @@
-import buttons from '@/pages/buttons'
-
+import inputs from '@/pages/inputs'
 const routes = [
   {
-    path: '/buttons',
-    component: buttons
+    path: '/inputs',
+    component: inputs
   }
 ]
 
