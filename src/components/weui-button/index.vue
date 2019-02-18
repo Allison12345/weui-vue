@@ -5,7 +5,7 @@
 
 <script>
 export default {
-  name: 'btn',
+  name: 'weui-button',
   // type: primary/default/warn
   props: ['type', 'label', 'loading', 'disabled', 'plain', 'mini'],
   computed: {

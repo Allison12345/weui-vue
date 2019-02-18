@@ -1,6 +1,9 @@
-import btn from './btn'
-import ipt from './ipt'
-const components = [btn, ipt]
+import WeuiButton from './weui-button'
+import WeuiInput from './weui-input'
+import WeuiCell from './weui-cell'
+import WeuiCells from './weui-cells'
+
+const components = [WeuiButton, WeuiInput, WeuiCells, WeuiCell]
 
 const install = Vue => {
   if (install.installed) return
