@@ -16,6 +16,10 @@ div
       label.weui-label(slot='hd') 请输入qq
       weui-input(slot='bd' placeholder='qq号' v-model='qq')
       div(slot='ft') ft
+    weui-cell(access='vcode')
+      lable.weui-label(slot='hd') 手机号
+      weui-input(slot='bd' type='tel' placeholder='请输入手机号')
+      button(slot='ft' btn='btn') 获取验证码
 </template>
 
 <script>
