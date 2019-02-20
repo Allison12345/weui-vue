@@ -1,5 +1,5 @@
 <template lang="pug">
-  .weui-cell(:class='{"weui-cell_access":access,"weui-cell_vcode":vcode}')
+  .weui-cell(:class='{"weui-cell_access":access,"weui-cell_vcode":vcode,"weui-cell_warn":warn,"weui-cell_switch":switchs}')
     .weui-cell__hd
       slot(name='hd')
     .weui-cell__bd
@@ -11,6 +11,6 @@
 <script>
 export default {
   name: 'weui-cell',
-  props: ['access', 'vcode']
+  props: ['access', 'vcode', 'warn', 'switchs']
 }
 </script>
