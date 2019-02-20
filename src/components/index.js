@@ -11,6 +11,7 @@ import WeuiSwitchCpInput from './weui-switch-cp-input'
 import WeuiSwitchCpBox from './weui-switch-cp-box'
 import WeuiTextarea from './weui-textarea'
 import WeuiTextareaCounter from './weui-textarea-counter'
+
 const components = [
   WeuiButton,
   WeuiInput,
