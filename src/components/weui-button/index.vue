@@ -1,5 +1,5 @@
 <template lang="pug">
-  button.weui-btn(:class='className' @click='onClick') {{label}}
+  button.weui-btn(:class='className' @click='onClick' :href="href" :id='id') {{label}}
     i.weui-loading(v-if='loading')
 </template>
 
@@ -7,7 +7,16 @@
 export default {
   name: 'weui-button',
   // type: primary/default/warn
-  props: ['type', 'label', 'loading', 'disabled', 'plain', 'mini'],
+  props: [
+    'type',
+    'label',
+    'loading',
+    'disabled',
+    'plain',
+    'mini',
+    'href',
+    'id'
+  ],
   computed: {
     className() {
       const { type, loading, disabled, plain, mini } = this

@@ -40,8 +40,21 @@ div
   weui-cells(title='选择')
     weui-cell(select='select' :ft='null')
       .weui-cell__hd(slot='hd')
-        weui-select(name='select2' :items='items')
+        weui-select(name='select2' :items='select2Items')
       weui-input(slot='bd' type='number' pattern='[0-9]*' placeholder='请输入号码' :maxlength='11')
+  weui-cells(title='选择')
+  weui-cells
+    weui-cell(selects='select' :hd='null' :ft='null')
+      .weui-cell-bd(slot='bd')
+        weui-select(name='select1' :items='select1Items')
+    weui-cell(selectss='select' :ft='null' hd='国家/地区')
+        weui-select(slot='bd' name=select3 :items='select3Items')
+  label.weui-agree(for='weuiAgree')
+    weui-agree-checkbox(id='weuiAgree' type='checkbox')
+    weui-agree-text() "阅读并同意"
+      a(href='javascript:void(0)') 《相关条款》
+  weui-btn-area
+    weui-button(type='primary' href='javascript:' id='showTooltips' label='确定' @click='onClick("primary")') 
 </template>
 
 <script>
@@ -52,7 +65,22 @@ export default {
       qq: '',
       textareaStr: '',
       limit: 5,
-      items: [{ label: '+86', value: '1' }, { label: '+80', value: '2' }]
+      select2Items: [
+        { label: '+86', value: '1' },
+        { label: '+80', value: '2' },
+        { label: '84', value: '3' },
+        { label: '87', value: '4' }
+      ],
+      select1Items: [
+        { label: '微信号', value: '1' },
+        { label: 'QQ号', value: '2' },
+        { label: 'Email', value: '3' }
+      ],
+      select3Items: [
+        { label: '中国', value: '1' },
+        { label: '美国', value: '2' },
+        { label: '法国', value: '3' }
+      ]
     }
   },
   methods: {

@@ -21,17 +21,20 @@ export default {
     'warn',
     'switchs',
     'select',
-    'select-before'
+    'selects',
+    'selectss'
   ],
   computed: {
     className() {
-      const { access, vcode, warn, switchs, select } = this
+      const { access, vcode, warn, switchs, select, selects, selectss } = this
       return {
         'weui-cell_access': access,
         'weui-cell_vcode': vcode,
         'weui-cell_warn': warn,
         'weui-cell_switch': switchs,
-        'weui-cell_select weui-cell_select-before': select
+        'weui-cell_select weui-cell_select-before': select,
+        'weui-cell_select': selects,
+        'weui-cell_select weui-cell_select-after': selectss
       }
     }
   }
