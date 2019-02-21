@@ -39,7 +39,7 @@ div
         weui-textarea-counter(:count='textareaStr.length' :limit='limit')
   weui-cells(title='选择')
     weui-cell(select='select' :ft='null')
-      weui-cell(solt='hd')
+      .weui-cell__hd(slot='hd')
         weui-select(name='select2' :items='items')
       weui-input(slot='bd' type='number' pattern='[0-9]*' placeholder='请输入号码' :maxlength='11')
 </template>
