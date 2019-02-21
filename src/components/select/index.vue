@@ -4,7 +4,7 @@
 </template>
 <script>
 export default {
-  name: 'select',
+  name: 'weui-select',
   props: ['name', 'items']
 }
 </script>
