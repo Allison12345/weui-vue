@@ -1,15 +1,10 @@
 <template lang="pug">
   select.weui-select(:name='name')
-    option(v-for='item in options' :value='item.value') 
+    option(v-for='item in items' :value='item.value') {{item.label}}
 </template>
 <script>
 export default {
   name: 'select',
-  props: ['name', 'value'],
-  data() {
-    return {
-      options: ['1', '2', '3', '4']
-    }
-  }
+  props: ['name', 'items']
 }
 </script>
