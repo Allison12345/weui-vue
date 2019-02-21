@@ -38,13 +38,8 @@ div
         weui-textarea(placeholder='请输入文本' :row='3' :maxlength='limit' v-model='textareaStr')
         weui-textarea-counter(:count='textareaStr.length' :limit='limit')
   weui-cells(title='选择')
-  weui-cells
-    weui-cell(select='select' :ft='null' )
-      select(slot='hd' name='select2')
-        option(value='item') +86
-        option(:value='2') +80
-        option(:value='3') +84
-        option(:value='4') +87
+    weui-cell(select='select' :ft='null')
+      weui-select(slot='hd' name='select2' :items='items')
       weui-input(slot='bd' type='number' pattern='[0-9]*' placeholder='请输入号码' :maxlength='11')
 </template>
 
@@ -55,7 +50,8 @@ export default {
     return {
       qq: '',
       textareaStr: '',
-      limit: 5
+      limit: 5,
+      items:[{label:'+86',value:'1'},{label:'+80',value:'2'}]
     }
   },
   methods: {
