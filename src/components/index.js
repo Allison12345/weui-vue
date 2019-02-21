@@ -11,7 +11,7 @@ import WeuiSwitchCpInput from './weui-switch-cp-input'
 import WeuiSwitchCpBox from './weui-switch-cp-box'
 import WeuiTextarea from './weui-textarea'
 import WeuiTextareaCounter from './weui-textarea-counter'
-import Select from './select'
+import WeuiSelect from './select'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -26,7 +26,7 @@ const components = [
   WeuiSwitchCpBox,
   WeuiTextarea,
   WeuiTextareaCounter,
-  Select
+  WeuiSelect
 ]
 
 const install = Vue => {
