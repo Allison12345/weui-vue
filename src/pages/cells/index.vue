@@ -5,7 +5,7 @@ div
       weui-input(slot='bd' placeholder='qq号' v-model='qq')
     weui-cell(hd='qq' bd='qq')
     weui-cell(access='access' hd='hd' bd='bd')
-  weui-cells(title='标题😊' tips='底部说明文字')
+  weui-cells(title='标题' tips='底部说明文字')
     weui-cell(hd='请输入qq' ft='ft')
       weui-input(slot='bd' placeholder='qq号' v-model='qq') 
     weui-cell(vcode='vcode' hd='手机号')
@@ -37,6 +37,15 @@ div
       template(slot='bd')
         weui-textarea(placeholder='请输入文本' :row='3' :maxlength='limit' v-model='textareaStr')
         weui-textarea-counter(:count='textareaStr.length' :limit='limit')
+  weui-cells(title='选择')
+  weui-cells
+    weui-cell(select='select' :ft='null' )
+      select(slot='hd' name='select2')
+        option(value='item') +86
+        option(:value='2') +80
+        option(:value='3') +84
+        option(:value='4') +87
+      weui-input(slot='bd' type='number' pattern='[0-9]*' placeholder='请输入号码' :maxlength='11')
 </template>
 
 <script>
