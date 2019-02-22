@@ -1,6 +1,7 @@
 import inputs from '@/pages/inputs'
 import buttons from '@/pages/buttons'
 import cells from '@/pages/cells'
+import list from '@/pages/list'
 const routes = [
   {
     path: '/inputs',
@@ -13,6 +14,10 @@ const routes = [
   {
     path: '/cells',
     component: cells
+  },
+  {
+    path: '/list',
+    component: list
   }
 ]
 

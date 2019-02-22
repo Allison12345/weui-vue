@@ -4,6 +4,7 @@
       .weui-cell__hd(v-if='hd!==null')
         label.weui-label {{hd}}
     .weui-cell__bd(v-if='bd!==null')
+      slot
       slot(name='bd') {{bd}}
     slot(name='ft')
       .weui-cell__ft(v-if='ft!==null') {{ft}}
@@ -22,11 +23,21 @@ export default {
     'switchs',
     'select',
     'selects',
-    'selectss'
+    'selectss',
+    'swiped'
   ],
   computed: {
     className() {
-      const { access, vcode, warn, switchs, select, selects, selectss } = this
+      const {
+        access,
+        vcode,
+        warn,
+        switchs,
+        select,
+        selects,
+        selectss,
+        swiped
+      } = this
       return {
         'weui-cell_access': access,
         'weui-cell_vcode': vcode,
@@ -34,7 +45,8 @@ export default {
         'weui-cell_switch': switchs,
         'weui-cell_select weui-cell_select-before': select,
         'weui-cell_select': selects,
-        'weui-cell_select weui-cell_select-after': selectss
+        'weui-cell_select weui-cell_select-after': selectss,
+        'weui-cell_swiped': swiped
       }
     }
   }
