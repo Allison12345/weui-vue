@@ -1,5 +1,6 @@
 <template lang="pug">
 div
+  weui-toptips(warn='warn' v-show='isShow') 错误提示
   weui-cells(form='form' title='标题')
     weui-cell(hd='请输入qq' ft='ft') 
       weui-input(slot='bd' placeholder='qq号' v-model='qq')
@@ -40,21 +41,21 @@ div
   weui-cells(title='选择')
     weui-cell(select='select' :ft='null')
       .weui-cell__hd(slot='hd')
-        weui-select(name='select2' :items='select2Items')
+        weui-select(:items='select2Items')
       weui-input(slot='bd' type='number' pattern='[0-9]*' placeholder='请输入号码' :maxlength='11')
   weui-cells(title='选择')
   weui-cells
     weui-cell(selects='select' :hd='null' :ft='null')
       .weui-cell-bd(slot='bd')
-        weui-select(name='select1' :items='select1Items')
+        weui-select(:items='select1Items')
     weui-cell(selectss='select' :ft='null' hd='国家/地区')
-        weui-select(slot='bd' name=select3 :items='select3Items')
+      weui-select(slot='bd' :items='select3Items')
   label.weui-agree(for='weuiAgree')
     weui-agree-checkbox(id='weuiAgree' type='checkbox')
-    weui-agree-text() "阅读并同意"
+    weui-agree-text 阅读并同意
       a(href='javascript:void(0)') 《相关条款》
   weui-btn-area
-    weui-button(type='primary' href='javascript:' id='showTooltips' label='确定' @click='onClick("primary")') 
+    weui-button(type='primary' href='javascript:' id='showTooltips' label='确定' @click='showToptips()') 
 </template>
 
 <script>
@@ -80,12 +81,19 @@ export default {
         { label: '中国', value: '1' },
         { label: '美国', value: '2' },
         { label: '法国', value: '3' }
-      ]
+      ],
+      isShow: false
     }
   },
   methods: {
     onClick(type) {
       console.log(type)
+    },
+    showToptips() {
+      this.isShow = true
+      setTimeout(() => {
+        this.isShow = false
+      }, 1500)
     }
   }
 }

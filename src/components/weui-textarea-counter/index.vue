@@ -1,5 +1,5 @@
 <template lang="pug">
-  span.weui-textarea-counter(:count='conut' :limit='limit')
+  .weui-textarea-counter {{count}}/{{limit}}
 </template>
 <script>
 export default {

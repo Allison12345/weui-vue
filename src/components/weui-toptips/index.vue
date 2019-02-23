@@ -1,17 +1,15 @@
 <template lang="pug">
-  a.weui-swiped-btn(:class='className' href='javascript:')
+  .weui-toptips(:class='className' style='display: block;')
     slot
 </template>
 <script>
 export default {
-  name: 'weui-swiped',
+  name: 'weui-toptips',
   props: ['warn'],
   computed: {
     className() {
       const { warn } = this
-      return {
-        'weui-swiped-btn_warn': warn
-      }
+      return { 'weui-toptips_warn': warn }
     }
   }
 }

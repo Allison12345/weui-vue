@@ -10,11 +10,13 @@ import WeuiSwitchCp from './weui-switch-cp'
 import WeuiSwitchCpInput from './weui-switch-cp-input'
 import WeuiSwitchCpBox from './weui-switch-cp-box'
 import WeuiTextarea from './weui-textarea'
+import WeuiBtnArea from './weui-btn-area'
 import WeuiTextareaCounter from './weui-textarea-counter'
 import WeuiSelect from './weui-select'
 import WeuiAgreeCheckBox from './weui-agree-checkbox'
 import WeuiAgreeText from './weui-agree-text'
 import WeuiSwiped from './weui-swiped'
+import WeuiToptips from './weui-toptips'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -32,7 +34,9 @@ const components = [
   WeuiSelect,
   WeuiAgreeCheckBox,
   WeuiAgreeText,
-  WeuiSwiped
+  WeuiSwiped,
+  WeuiToptips,
+  WeuiBtnArea
 ]
 
 const install = Vue => {

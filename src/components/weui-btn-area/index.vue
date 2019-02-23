@@ -1,9 +1,9 @@
 <template lang="pug">
-  span.weui-agree__text
+  .weui-btn-area
     slot
 </template>
 <script>
 export default {
-  name: 'weui-agree-text'
+  name: 'weui-btn-area'
 }
 </script>

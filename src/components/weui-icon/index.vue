@@ -1,5 +1,5 @@
 <template lang="pug">
-  i.weui-icon-warn()
+  i.weui-icon-warn
 </template>
 <script>
 export default {

@@ -3,8 +3,7 @@
     slot(name='hd')
       .weui-cell__hd(v-if='hd!==null')
         label.weui-label {{hd}}
-    .weui-cell__bd(v-if='bd!==null')
-      slot
+    .weui-cell__bd(v-if='bd!==null' :style='bdStyle')
       slot(name='bd') {{bd}}
     slot(name='ft')
       .weui-cell__ft(v-if='ft!==null') {{ft}}
@@ -24,7 +23,8 @@ export default {
     'select',
     'selects',
     'selectss',
-    'swiped'
+    'swiped',
+    'bdStyle'
   ],
   computed: {
     className() {
