@@ -1,5 +1,5 @@
 <template lang="pug">
-  label.weui-switch-cp()
+  label.weui-switch-cp
     slot
 </template>
 <script>

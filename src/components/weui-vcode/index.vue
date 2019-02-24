@@ -1,10 +1,10 @@
 <template lang="pug">
-  button.weui-vcode-btn(@click='onClick') {{btn}}
+  button.weui-vcode-btn(@click='onClick')
+    slot
 </template>
 <script>
 export default {
   name: 'weui-vcode',
-  props: ['btn'],
   methods: {
     onClick(e) {
       this.$emit('click', e)

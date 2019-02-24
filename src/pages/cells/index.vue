@@ -11,7 +11,7 @@ div
       weui-input(slot='bd' placeholder='qq号' v-model='qq') 
     weui-cell(vcode='vcode' hd='手机号')
       weui-input(slot='bd' type='tel' placeholder='请输入手机号')
-      weui-vcode(slot='ft' btn='获取验证码' @click='onClick("验证码")') 
+      weui-vcode(slot='ft' @click='onClick("验证码")') 获取验证码
     weui-cell(hd='日期' :ft='null')
       weui-input(slot='bd' type='date')
     weui-cell(hd='时间' :ft='null')
@@ -55,7 +55,7 @@ div
     weui-agree-text 阅读并同意
       a(href='javascript:void(0)') 《相关条款》
   weui-btn-area
-    weui-button(type='primary' href='javascript:' id='showTooltips' label='确定' @click='showToptips()') 
+    weui-button(type='primary' href='javascript:' id='showTooltips' @click='showToptips()') 确定
 </template>
 
 <script>

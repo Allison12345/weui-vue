@@ -1,5 +1,5 @@
 <template lang="pug">
-  .weui-cell(:class='className')
+  .weui-cell(:class='className' @click='onClick')
     slot(name='hd')
       .weui-cell__hd(v-if='hd!==null')
         label.weui-label {{hd}}
@@ -26,6 +26,11 @@ export default {
     'swiped',
     'bdStyle'
   ],
+  methods: {
+    onClick() {
+      this.$emit('click')
+    }
+  },
   computed: {
     className() {
       const {

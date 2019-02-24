@@ -17,6 +17,7 @@ import WeuiAgreeCheckBox from './weui-agree-checkbox'
 import WeuiAgreeText from './weui-agree-text'
 import WeuiSwiped from './weui-swiped'
 import WeuiToptips from './weui-toptips'
+import Pane from './pane'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -36,7 +37,8 @@ const components = [
   WeuiAgreeText,
   WeuiSwiped,
   WeuiToptips,
-  WeuiBtnArea
+  WeuiBtnArea,
+  Pane
 ]
 
 const install = Vue => {
