@@ -1,12 +1,16 @@
 <template lang="pug">
+.container
   .page
     .page__hd
       h1.page_title
-        img(:src='src' :alt='alt')
-    .page__bd
+        img(src='https://weui.io/images/logo.png' alt='My Weui' height='21px')
+      p.page__desc 我的weui样式
+    .page__bd.page__bd-spacing
       ul
         pane(v-for='item of items' :key='item.label' :label='item.label' :icon='item.icon' :items='item.items')
     .page__ft
+      a
+        img
 </template>
 <script>
 export default {
@@ -26,6 +30,18 @@ export default {
             {
               label: 'Input',
               path: 'cells'
+            },
+            {
+              label: 'List',
+              path: 'list'
+            },
+            {
+              label: 'Sider',
+              path: 'sider'
+            },
+            {
+              label: 'Uploder',
+              path: 'uploder'
             }
           ]
         },
@@ -38,6 +54,40 @@ export default {
               path: 'article'
             }
           ]
+        },
+        {
+          label: '操作反馈',
+          icon: 'icon_nav_feedback',
+          items: [
+            {
+              label: 'Actionsheet',
+              path: 'actionsheet'
+            }
+          ]
+        },
+        {
+          label: '导航相关',
+          icon: 'icon_nav_nav',
+          items: [
+            {
+              label: 'Navbar',
+              path: 'navbar'
+            }
+          ]
+        },
+        {
+          label: '搜索相关',
+          icon: 'icon_nav_search',
+          items: [
+            {
+              label: 'SearchBar',
+              path: 'searchbar'
+            }
+          ]
+        },
+        {
+          label: '层级范围',
+          icon: 'icon_nav_z-index'
         }
       ]
     }
