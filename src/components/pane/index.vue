@@ -1,8 +1,8 @@
 <template lang="pug">
   li(@click='toggleShow()')
-    .weui-flex
-      p.weiu-flex__item {{label}}
-      img(:src='src')
+    .weui-flex.pane-hd
+      p.weui-flex__item {{label}}
+      img.pane-img(:src='src')
     .page-category(v-if='isShow')
       weui-cells
         weui-cell(v-for='item of items' :key='item.path' :hd='null' access='access' :bd='item.label' @click='onClick(item.path)')
@@ -32,3 +32,16 @@ export default {
   }
 }
 </script>
+
+<style>
+.pane-hd {
+  padding: 20px;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.pane-img {
+  width: 30px;
+  height: 30px;
+}
+</style>

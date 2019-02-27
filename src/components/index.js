@@ -18,6 +18,7 @@ import WeuiAgreeText from './weui-agree-text'
 import WeuiSwiped from './weui-swiped'
 import WeuiToptips from './weui-toptips'
 import Pane from './pane'
+import WeuiSlider from './weui-slider'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -38,7 +39,8 @@ const components = [
   WeuiSwiped,
   WeuiToptips,
   WeuiBtnArea,
-  Pane
+  Pane,
+  WeuiSlider
 ]
 
 const install = Vue => {

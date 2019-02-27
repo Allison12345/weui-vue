@@ -3,6 +3,7 @@ import buttons from '@/pages/buttons'
 import cells from '@/pages/cells'
 import list from '@/pages/list'
 import home from '@/pages/home'
+import slider from '@/pages/slider'
 const routes = [
   {
     path: '/',
@@ -23,6 +24,10 @@ const routes = [
   {
     path: '/list',
     component: list
+  },
+  {
+    path: '/slider',
+    component: slider
   }
 ]
 
