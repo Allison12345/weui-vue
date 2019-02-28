@@ -1,5 +1,7 @@
 <template lang="pug">
-  weui-slider(:value='value')
+div
+  weui-slider
+  weui-slider-box(:value='value')
 </template>
 <script>
 export default {

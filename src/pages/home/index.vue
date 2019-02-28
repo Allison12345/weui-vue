@@ -36,8 +36,8 @@ export default {
               path: 'list'
             },
             {
-              label: 'Sider',
-              path: 'sider'
+              label: 'Slider',
+              path: 'slider'
             },
             {
               label: 'Uploder',
