@@ -1,6 +1,6 @@
 <template lang="pug">
 .container
-  .page
+  .page.js_show
     .page__hd
       h1.page_title
         img(src='https://weui.io/images/logo.png' alt='My Weui' height='21px')
@@ -40,8 +40,8 @@ export default {
               path: 'slider'
             },
             {
-              label: 'Uploder',
-              path: 'uploder'
+              label: 'Uplaoder',
+              path: 'uploader'
             }
           ]
         },
@@ -94,3 +94,49 @@ export default {
   }
 }
 </script>
+<style>
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.page {
+  overflow-y: auto;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f8f8f8;
+}
+.page.js_show {
+  opacity: 1;
+}
+.page__hd {
+  padding: 40px;
+}
+.page__bd-spacing {
+  padding: 0 15px;
+}
+.page__ft {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.page__title {
+  font-size: 0;
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: 400;
+}
+.page__desc {
+  margin-top: 5px;
+  color: #888;
+  text-align: left;
+  font-size: 14px;
+}
+</style>

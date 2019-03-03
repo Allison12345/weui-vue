@@ -12,3 +12,8 @@ export default {
   props: ['form', 'title', 'tips']
 }
 </script>
+<style>
+.weui-cells {
+  margin-top: 0;
+}
+</style>

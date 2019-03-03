@@ -20,6 +20,9 @@ import WeuiToptips from './weui-toptips'
 import Pane from './pane'
 import WeuiSlider from './weui-slider'
 import WeuiSliderBox from './weui-slider-box'
+import WeuiUploader from './wuei-uploader'
+import WeuiUploaderInfo from './weui-uploader-info'
+import WeuiUploaderFiles from './weui-uploader-files'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -42,7 +45,10 @@ const components = [
   WeuiBtnArea,
   Pane,
   WeuiSlider,
-  WeuiSliderBox
+  WeuiSliderBox,
+  WeuiUploader,
+  WeuiUploaderInfo,
+  WeuiUploaderFiles
 ]
 
 const install = Vue => {

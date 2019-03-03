@@ -4,6 +4,7 @@ import cells from '@/pages/cells'
 import list from '@/pages/list'
 import home from '@/pages/home'
 import slider from '@/pages/slider'
+import uploader from '@/pages/uploader'
 const routes = [
   {
     path: '/',
@@ -28,6 +29,10 @@ const routes = [
   {
     path: '/slider',
     component: slider
+  },
+  {
+    path: '/uploader',
+    component: uploader
   }
 ]
 
