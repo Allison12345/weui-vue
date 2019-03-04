@@ -5,6 +5,7 @@ import list from '@/pages/list'
 import home from '@/pages/home'
 import slider from '@/pages/slider'
 import uploader from '@/pages/uploader'
+import article from '@/pages/article'
 const routes = [
   {
     path: '/',
@@ -33,6 +34,10 @@ const routes = [
   {
     path: '/uploader',
     component: uploader
+  },
+  {
+    path: './article',
+    component: article
   }
 ]
 
