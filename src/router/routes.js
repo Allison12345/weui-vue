@@ -6,6 +6,7 @@ import home from '@/pages/home'
 import slider from '@/pages/slider'
 import uploader from '@/pages/uploader'
 import article from '@/pages/article'
+import badge from '@/pages/badge'
 const routes = [
   {
     path: '/',
@@ -38,6 +39,10 @@ const routes = [
   {
     path: '/article',
     component: article
+  },
+  {
+    path: '/badge',
+    component: badge
   }
 ]
 

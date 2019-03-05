@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  my-article
+  page
     template(slot='hd')
       h1.page__title title
       p.page__desc desc

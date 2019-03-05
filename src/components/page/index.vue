@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  .my-article.js_show
+  .page.js_show
     .page__hd
       slot(name='hd')
     .page__bd
@@ -10,11 +10,11 @@ div
 </template>
 <script>
 export default {
-  name: 'my-article'
+  name: 'page'
 }
 </script>
 <style>
-.my-article {
+.page {
   overflow-y: auto;
   z-index: 1;
   background-color: #f8f8f8;
@@ -24,7 +24,7 @@ export default {
   bottom: 0;
   left: 0;
 }
-.my-article.js_show {
+.page.js_show {
   opacity: 1;
 }
 </style>

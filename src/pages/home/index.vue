@@ -52,6 +52,10 @@ export default {
             {
               label: 'Article',
               path: 'article'
+            },
+            {
+              label: 'badge',
+              path: 'badge'
             }
           ]
         },

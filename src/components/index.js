@@ -23,7 +23,7 @@ import WeuiSliderBox from './weui-slider-box'
 import WeuiUploader from './wuei-uploader'
 import WeuiUploaderInfo from './weui-uploader-info'
 import WeuiUploaderFiles from './weui-uploader-files'
-import MyArticle from './article'
+import Page from './page'
 import WeuiArticle from './weui-article'
 const components = [
   WeuiButton,
@@ -51,7 +51,7 @@ const components = [
   WeuiUploader,
   WeuiUploaderInfo,
   WeuiUploaderFiles,
-  MyArticle,
+  Page,
   WeuiArticle
 ]
 
