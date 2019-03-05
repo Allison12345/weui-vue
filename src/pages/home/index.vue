@@ -128,7 +128,6 @@ export default {
   text-align: center;
 }
 .page__title {
-  font-size: 0;
   margin-bottom: 15px;
   text-align: left;
   font-weight: 400;

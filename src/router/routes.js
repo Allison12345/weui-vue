@@ -36,7 +36,7 @@ const routes = [
     component: uploader
   },
   {
-    path: './article',
+    path: '/article',
     component: article
   }
 ]

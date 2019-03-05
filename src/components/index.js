@@ -23,7 +23,8 @@ import WeuiSliderBox from './weui-slider-box'
 import WeuiUploader from './wuei-uploader'
 import WeuiUploaderInfo from './weui-uploader-info'
 import WeuiUploaderFiles from './weui-uploader-files'
-import MyArticle from './weui-article'
+import MyArticle from './article'
+import WeuiArticle from './weui-article'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -50,7 +51,8 @@ const components = [
   WeuiUploader,
   WeuiUploaderInfo,
   WeuiUploaderFiles,
-  MyArticle
+  MyArticle,
+  WeuiArticle
 ]
 
 const install = Vue => {
