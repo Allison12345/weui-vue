@@ -3,7 +3,7 @@
   .page.js_show
     .page__hd
       h1.page_title
-        img(src='https://weui.io/images/logo.png' alt='My Weui' height='21px')
+        img(:src='LogoImg' alt='My Weui' height='21px')
       p.page__desc 我的weui样式
     .page__bd.page__bd-spacing
       ul
@@ -13,11 +13,13 @@
         img
 </template>
 <script>
+import LogoImg from '@/assets/imgs/logo.png'
 export default {
   name: 'home',
   props: ['src', 'alt'],
   data() {
     return {
+      LogoImg,
       items: [
         {
           label: '表单',

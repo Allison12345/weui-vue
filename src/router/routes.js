@@ -7,6 +7,7 @@ import slider from '@/pages/slider'
 import uploader from '@/pages/uploader'
 import article from '@/pages/article'
 import badge from '@/pages/badge'
+import actionsheet from '@/pages/actionsheet'
 const routes = [
   {
     path: '/',
@@ -43,7 +44,8 @@ const routes = [
   {
     path: '/badge',
     component: badge
-  }
+  },
+  { path: '/actionsheet', component: actionsheet }
 ]
 
 export default routes

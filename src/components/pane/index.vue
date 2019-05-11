@@ -27,7 +27,7 @@ export default {
   },
   computed: {
     src() {
-      return `https://weui.io/images/${this.icon}.png`
+      return require(`@/assets/imgs/${this.icon}.png`)
     }
   }
 }
