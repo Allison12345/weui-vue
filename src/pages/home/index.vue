@@ -68,6 +68,10 @@ export default {
             {
               label: 'Actionsheet',
               path: 'actionsheet'
+            },
+            {
+              label: 'Dialog',
+              path: 'dialog'
             }
           ]
         },

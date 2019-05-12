@@ -25,6 +25,9 @@ import WeuiUploaderInfo from './weui-uploader-info'
 import WeuiUploaderFiles from './weui-uploader-files'
 import Page from './page'
 import WeuiArticle from './weui-article'
+import WeuiActionSheet from './weui-actionsheet'
+import WeuiMask from './weui-mask'
+import WeuiDialog from './weui-dialog'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -52,7 +55,10 @@ const components = [
   WeuiUploaderInfo,
   WeuiUploaderFiles,
   Page,
-  WeuiArticle
+  WeuiArticle,
+  WeuiActionSheet,
+  WeuiMask,
+  WeuiDialog
 ]
 
 const install = Vue => {
