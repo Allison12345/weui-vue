@@ -29,6 +29,9 @@ import WeuiActionSheet from './weui-actionsheet'
 import WeuiMask from './weui-mask'
 import WeuiDialog from './weui-dialog'
 import WeuiMsg from './weui-msg'
+import WeuiToast from './weui-toast'
+import WeuiLoadingToast from './weui-loading-toast'
+import WeuiMaskTransparent from './weui-mask-transparent'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -60,7 +63,10 @@ const components = [
   WeuiActionSheet,
   WeuiMask,
   WeuiDialog,
-  WeuiMsg
+  WeuiMsg,
+  WeuiToast,
+  WeuiLoadingToast,
+  WeuiMaskTransparent
 ]
 
 const install = Vue => {

@@ -76,6 +76,10 @@ export default {
             {
               label: 'Msg',
               path: 'msg'
+            },
+            {
+              label: 'Toast',
+              path: 'toast'
             }
           ]
         },

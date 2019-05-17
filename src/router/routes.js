@@ -11,6 +11,7 @@ import actionsheet from '@/pages/actionsheet'
 import dialog from '@/pages/dialog'
 import msg from '@/pages/msg'
 import weuiMsg from '@/components/weui-msg'
+import toast from '@/pages/toast'
 const routes = [
   {
     path: '/',
@@ -63,6 +64,10 @@ const routes = [
   {
     path: '/weuiMsg',
     component: weuiMsg
+  },
+  {
+    path: '/toast',
+    component: toast
   }
 ]
 
