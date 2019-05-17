@@ -72,6 +72,10 @@ export default {
             {
               label: 'Dialog',
               path: 'dialog'
+            },
+            {
+              label: 'Msg',
+              path: 'msg'
             }
           ]
         },

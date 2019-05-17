@@ -9,6 +9,8 @@ import article from '@/pages/article'
 import badge from '@/pages/badge'
 import actionsheet from '@/pages/actionsheet'
 import dialog from '@/pages/dialog'
+import msg from '@/pages/msg'
+import weuiMsg from '@/components/weui-msg'
 const routes = [
   {
     path: '/',
@@ -53,6 +55,14 @@ const routes = [
   {
     path: '/dialog',
     component: dialog
+  },
+  {
+    path: '/msg',
+    component: msg
+  },
+  {
+    path: '/weuiMsg',
+    component: weuiMsg
   }
 ]
 

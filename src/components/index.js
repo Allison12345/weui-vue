@@ -28,6 +28,7 @@ import WeuiArticle from './weui-article'
 import WeuiActionSheet from './weui-actionsheet'
 import WeuiMask from './weui-mask'
 import WeuiDialog from './weui-dialog'
+import WeuiMsg from './weui-msg'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -58,7 +59,8 @@ const components = [
   WeuiArticle,
   WeuiActionSheet,
   WeuiMask,
-  WeuiDialog
+  WeuiDialog,
+  WeuiMsg
 ]
 
 const install = Vue => {
