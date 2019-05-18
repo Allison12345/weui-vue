@@ -1,23 +1,24 @@
 <template lang="pug">
   .weui-msg
     .weui-msg__icon-area
-      i.weui-icon-success.weui-icon_msg
+      i.weui-icon_msg(:class='`weui-icon-${MSG_RESULT.icon}`')
     .weui-msg__text-area
-      h2.weui-msg__title 操作成功
-      p.weui-mssg__desc 内容详情 居中显示
+      h2.weui-msg__title {{MSG_RESULT.title}}
+      p.weui-mssg__desc {{MSG_RESULT.desc}}
     .weui-msg__opr-area(@click='onClick()')
-      weui-button(type='primary') 推荐操作
+      weui-button(type='primary') {{MSG_RESULT.btnText}}
     .weui-msg__ips-area
-      p.weui-msg__tips 提示详情
-    .weui-msg__extra-area
-
+      p.weui-msg__tips {{MSG_RESULT.detail}}
 </template>
 <script>
+import { mapGetters } from 'vuex'
+import { MSG_RESULT } from '@/store'
 export default {
   name: 'weui-msg',
+  computed: mapGetters([MSG_RESULT]),
   methods: {
     onClick() {
-      this.$router.push({ path: 'msg' })
+      this.$router.back()
     }
   }
 }
