@@ -32,6 +32,8 @@ import WeuiMsg from './weui-msg'
 import WeuiToast from './weui-toast'
 import WeuiLoadingToast from './weui-loading-toast'
 import WeuiMaskTransparent from './weui-mask-transparent'
+import WeuiNavbar from './weui-navbar'
+import WeuiPanel from './weui-panel'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -66,7 +68,9 @@ const components = [
   WeuiMsg,
   WeuiToast,
   WeuiLoadingToast,
-  WeuiMaskTransparent
+  WeuiMaskTransparent,
+  WeuiNavbar,
+  WeuiPanel
 ]
 
 const install = Vue => {

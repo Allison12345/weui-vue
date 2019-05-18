@@ -5,7 +5,8 @@ Vue.use(Vuex)
 
 export const MSG_RESULT = 'MSG_RESULT'
 export const SAVE_MSG_RESULT = 'SAVE_MSG_RESULT'
-
+export const NAV_INDEX = 'NAV_INDEX'
+export const SAVE_NAV_INDEX = 'SAVE_NAV_INDEX'
 export default new Vuex.Store({
   state: {
     [MSG_RESULT]: {
@@ -14,14 +15,19 @@ export default new Vuex.Store({
       desc: '',
       btnText: '',
       detail: ''
-    }
+    },
+    [NAV_INDEX]: 0
   },
   getters: {
-    [MSG_RESULT]: state => state[MSG_RESULT]
+    [MSG_RESULT]: state => state[MSG_RESULT],
+    [NAV_INDEX]: state => state[NAV_INDEX]
   },
   mutations: {
     [SAVE_MSG_RESULT](state, data) {
       state[MSG_RESULT] = data
+    },
+    [SAVE_NAV_INDEX](state, index) {
+      state[NAV_INDEX] = index
     }
   }
 })

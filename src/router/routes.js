@@ -12,6 +12,7 @@ import dialog from '@/pages/dialog'
 import msg from '@/pages/msg'
 import weuiMsg from '@/components/weui-msg'
 import toast from '@/pages/toast'
+import navbar from '@/pages/navbar'
 const routes = [
   {
     path: '/',
@@ -68,6 +69,10 @@ const routes = [
   {
     path: '/toast',
     component: toast
+  },
+  {
+    path: '/navbar',
+    component: navbar
   }
 ]
 
