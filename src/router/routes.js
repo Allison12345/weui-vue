@@ -13,6 +13,7 @@ import msg from '@/pages/msg'
 import weuiMsg from '@/components/weui-msg'
 import toast from '@/pages/toast'
 import navbar from '@/pages/navbar'
+import myTabbar from '@/pages/myTabbar'
 const routes = [
   {
     path: '/',
@@ -73,6 +74,10 @@ const routes = [
   {
     path: '/navbar',
     component: navbar
+  },
+  {
+    path: '/myTabbar',
+    component: myTabbar
   }
 ]
 

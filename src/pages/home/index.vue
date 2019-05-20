@@ -90,6 +90,10 @@ export default {
             {
               label: 'Navbar',
               path: 'navbar'
+            },
+            {
+              label: 'Tabbar',
+              path: 'myTabbar'
             }
           ]
         },
