@@ -14,6 +14,7 @@ import weuiMsg from '@/components/weui-msg'
 import toast from '@/pages/toast'
 import navbar from '@/pages/navbar'
 import myTabbar from '@/pages/myTabbar'
+import weuiMyFlex from '@/pages/flex'
 const routes = [
   {
     path: '/',
@@ -78,6 +79,10 @@ const routes = [
   {
     path: '/myTabbar',
     component: myTabbar
+  },
+  {
+    path: '/flex',
+    component: weuiMyFlex
   }
 ]
 

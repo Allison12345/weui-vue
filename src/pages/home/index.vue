@@ -58,6 +58,10 @@ export default {
             {
               label: 'badge',
               path: 'badge'
+            },
+            {
+              label: 'flex',
+              path: 'flex'
             }
           ]
         },

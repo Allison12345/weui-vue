@@ -35,6 +35,8 @@ import WeuiMaskTransparent from './weui-mask-transparent'
 import WeuiNavbar from './weui-navbar'
 import WeuiPanel from './weui-panel'
 import WeuiTabbar from './weui-tabbar'
+import WeuiFlex from './weui-flex'
+import WeuiFlexItem from './weui-flex-item'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -72,7 +74,9 @@ const components = [
   WeuiMaskTransparent,
   WeuiNavbar,
   WeuiPanel,
-  WeuiTabbar
+  WeuiTabbar,
+  WeuiFlex,
+  WeuiFlexItem
 ]
 
 const install = Vue => {
