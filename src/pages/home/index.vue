@@ -62,6 +62,38 @@ export default {
             {
               label: 'flex',
               path: 'flex'
+            },
+            {
+              label: 'footer',
+              path: 'footer'
+            },
+            {
+              label: 'gallery',
+              path: 'gallery'
+            },
+            {
+              label: 'grid',
+              path: 'grid'
+            },
+            {
+              label: 'icons',
+              path: 'icons'
+            },
+            {
+              label: 'loadMore',
+              path: 'loadMore'
+            },
+            {
+              label: 'panel',
+              path: 'panel'
+            },
+            {
+              label: 'preview',
+              path: 'preview'
+            },
+            {
+              label: 'progress',
+              path: 'progress'
             }
           ]
         },

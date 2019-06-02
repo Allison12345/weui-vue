@@ -15,6 +15,14 @@ import toast from '@/pages/toast'
 import navbar from '@/pages/navbar'
 import myTabbar from '@/pages/myTabbar'
 import weuiMyFlex from '@/pages/flex'
+import weuiFooter from '@/pages/footer'
+import weuiGallery from '@/pages/gallery'
+import weuiGrid from '@/pages/grid'
+import weuiMyIcons from '@/pages/myIcons'
+import weuiLoadMore from '@/pages/loadMore'
+import weuiMyPanel from '@/pages/myPanel'
+import weuiPreview from '@/pages/preview'
+import weuiPrgress from '@/pages/progress'
 const routes = [
   {
     path: '/',
@@ -83,6 +91,38 @@ const routes = [
   {
     path: '/flex',
     component: weuiMyFlex
+  },
+  {
+    path: '/footer',
+    component: weuiFooter
+  },
+  {
+    path: '/gallery',
+    component: weuiGallery
+  },
+  {
+    path: 'grid',
+    component: weuiGrid
+  },
+  {
+    path: 'icons',
+    component: weuiMyIcons
+  },
+  {
+    path: 'loadMore',
+    component: weuiLoadMore
+  },
+  {
+    path: 'panel',
+    component: weuiMyPanel
+  },
+  {
+    path: 'preview',
+    component: weuiPreview
+  },
+  {
+    path: 'progress',
+    component: weuiPrgress
   }
 ]
 
