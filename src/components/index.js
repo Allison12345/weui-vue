@@ -37,7 +37,7 @@ import WeuiPanel from './weui-panel'
 import WeuiTabbar from './weui-tabbar'
 import WeuiFlex from './weui-flex'
 import WeuiFlexItem from './weui-flex-item'
-import WeuiGallery from './weui-myGallery'
+import WeuiGallery from './weui-gallery'
 const components = [
   WeuiButton,
   WeuiInput,

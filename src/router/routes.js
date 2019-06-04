@@ -16,7 +16,7 @@ import navbar from '@/pages/navbar'
 import myTabbar from '@/pages/myTabbar'
 import weuiMyFlex from '@/pages/flex'
 import weuiFooter from '@/pages/footer'
-import weuiGallery from '@/pages/gallery'
+import weuiMyGallery from '@/pages/gallery'
 import weuiGrid from '@/pages/grid'
 import weuiMyIcons from '@/pages/myIcons'
 import weuiLoadMore from '@/pages/loadMore'
@@ -98,7 +98,7 @@ const routes = [
   },
   {
     path: '/gallery',
-    component: weuiGallery
+    component: weuiMyGallery
   },
   {
     path: 'grid',
