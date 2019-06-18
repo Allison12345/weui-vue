@@ -38,6 +38,7 @@ import WeuiTabbar from './weui-tabbar'
 import WeuiFlex from './weui-flex'
 import WeuiFlexItem from './weui-flex-item'
 import WeuiGallery from './weui-gallery'
+import WeuiMyGrids from './weui-grids'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -78,7 +79,8 @@ const components = [
   WeuiTabbar,
   WeuiFlex,
   WeuiFlexItem,
-  WeuiGallery
+  WeuiGallery,
+  WeuiMyGrids
 ]
 
 const install = Vue => {

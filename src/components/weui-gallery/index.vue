@@ -1,10 +1,10 @@
 <template lang="pug">
   .weui-gallery(:style="{display: 'block'}")
     span.weui-gallery__img
-      img(v-for='(img,imgs) of items' :src="img" :key="index" :style="{width: '100%', height: '100%'} ")
+      img(v-for='(img,index) of imgs' :src="img" :key="index" :style="{width: '100%', height: '100%'} ")
     .weui-gallery__opr
-        a.weui-gallery__del
-          i.weui-icon-delete.weui-icon_gallery-delete
+      a.weui-gallery__del
+        i.weui-icon-delete.weui-icon_gallery-delete
 </template>
 <script>
 export default {

@@ -3,7 +3,7 @@
     .page__hd
       h1.page__title Gallery
       p.page__desc 上传图片
-    weui-gallery
+    weui-gallery(:imgs='imgs')
 </template>
 <script>
 export default {

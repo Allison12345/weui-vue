@@ -17,7 +17,7 @@ import myTabbar from '@/pages/myTabbar'
 import weuiMyFlex from '@/pages/flex'
 import weuiFooter from '@/pages/footer'
 import weuiMyGallery from '@/pages/gallery'
-import weuiGrid from '@/pages/grid'
+import weuiMyGrid from '@/pages/grid'
 import weuiMyIcons from '@/pages/myIcons'
 import weuiLoadMore from '@/pages/loadMore'
 import weuiMyPanel from '@/pages/myPanel'
@@ -101,15 +101,15 @@ const routes = [
     component: weuiMyGallery
   },
   {
-    path: 'grid',
-    component: weuiGrid
+    path: '/grid',
+    component: weuiMyGrid
   },
   {
-    path: 'icons',
+    path: '/icons',
     component: weuiMyIcons
   },
   {
-    path: 'loadMore',
+    path: '/loadMore',
     component: weuiLoadMore
   },
   {
@@ -117,11 +117,11 @@ const routes = [
     component: weuiMyPanel
   },
   {
-    path: 'preview',
+    path: '/preview',
     component: weuiPreview
   },
   {
-    path: 'progress',
+    path: '/progress',
     component: weuiPrgress
   }
 ]
