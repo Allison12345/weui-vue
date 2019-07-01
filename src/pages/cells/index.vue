@@ -22,7 +22,7 @@ div
   weui-cells(title='表单报错')
     weui-cell(warn='warn' hd='卡号') 
       weui-input(slot='bd' type='number' pattern="[0-9]*" value='weui-input-error' placeholder='请输入卡号')
-      weui-icon-warn(slot='ft' )
+      weui-icon(slot='ft' type='warn')
   weui-cells(form='form')
     weui-cell(switchs='switch' :hd='null' bd='标题文字')    
       weui-switch-input(slot='ft' type='checkbox')

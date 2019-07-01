@@ -113,7 +113,7 @@ const routes = [
     component: weuiLoadMore
   },
   {
-    path: 'panel',
+    path: '/panel',
     component: weuiMyPanel
   },
   {
