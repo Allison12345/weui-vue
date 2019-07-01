@@ -39,6 +39,9 @@ import WeuiFlex from './weui-flex'
 import WeuiFlexItem from './weui-flex-item'
 import WeuiGallery from './weui-gallery'
 import WeuiMyGrids from './weui-grids'
+import WeuiIconBox from './weui-icon-box'
+import WeuiIconBoxCtn from './weui-icon-box-ctn'
+import WeuiIconSpArea from './weui-agree-checkbox'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -80,7 +83,10 @@ const components = [
   WeuiFlex,
   WeuiFlexItem,
   WeuiGallery,
-  WeuiMyGrids
+  WeuiMyGrids,
+  WeuiIconBox,
+  WeuiIconBoxCtn,
+  WeuiIconSpArea
 ]
 
 const install = Vue => {
