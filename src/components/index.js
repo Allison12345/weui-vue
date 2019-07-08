@@ -45,6 +45,7 @@ import WeuiIconSpArea from './weui-agree-checkbox'
 import WeuiLoadmore from './weui-loadmore'
 import WeuiLoadmoreLine from './weui-loadmore-line'
 import WeuiLoadmoreDot from './weui-loadmore-dot'
+import WeuiIcon from './weui-icon'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -92,7 +93,8 @@ const components = [
   WeuiIconSpArea,
   WeuiLoadmore,
   WeuiLoadmoreLine,
-  WeuiLoadmoreDot
+  WeuiLoadmoreDot,
+  WeuiIcon
 ]
 
 const install = Vue => {

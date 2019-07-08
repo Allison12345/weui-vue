@@ -4,21 +4,10 @@
       h1.page__title icons
       p.page__desc 图标
     .page__bd.page__bd_spacing
-      weui-icon-box()
-        i.weui-icon-success.weui-icon_msg
-        weui-icon-box-ctn(title='成功' desc='用于操作顺利成功')
-      weui-icon-box
-        i.weui-icon-info.weui-icon_msg
-        weui-icon-box-ctn(title='提示' desc='用于表示信息提示；也常用于缺乏条件的操作拦截，提示用户所需信息')
-      weui-icon-box
-        i.weui-icon.weui-icon_msg-primary(type='warn')
-        weui-icon-box-ctn(title='普通警告' desc='用于表示操作后将引起一定后果的情况')
-      weui-icon-box
-        i.weui-icon_mag.weui-icon(type='warn')
-        weui-icon-box-ctn(title='强烈警告' desc='用于表示操作后将引起严重的不可挽回的后果的情况')
-      weui-icon-box
-        i.weui-icon-waiting.weui-icon_msg
-        weui-icon-box-ctn(title='等待' desc='用于表示等待')
+      weui-icon-box(v-for = '(item,index) of items' :key = 'index')
+        weui-icon(:type='item.logo' )
+        weui-icon(v-if='item.title==="普通警告"' isPrimary='true')
+        weui-icon-box-ctn(:title='item.title' :desc='item.desc')
       weui-icon-sp-area
 </template>
 <script>
@@ -26,7 +15,31 @@ export default {
   name: 'weui-MyIcons',
   data() {
     return {
-      items: [{ title: '' }]
+      items: [
+        {
+          title: '成功',
+          desc: '用于操作顺利成功',
+          logo: 'success'
+        },
+        {
+          title: '提示',
+          desc:
+            '用于表示信息提示；也常用于缺乏条件的操作拦截，提示用户所需信息',
+          logo: 'info'
+        },
+        {
+          title: '普通警告',
+          desc: '用于表示操作后将引起一定后果的情况',
+          logo: 'isPrimary'
+        },
+        {
+          title: '强烈警告',
+          desc: '用于表示操作后将引起严重的不可挽回的后果的情况',
+          logo: 'warn'
+        },
+        { title: '等待', desc: '用于表示等待', logo: 'waiting' }
+      ],
+      isShown: true
     }
   }
 }
