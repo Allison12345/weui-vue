@@ -4,22 +4,15 @@
 <script>
 export default {
   name: 'weui-icon',
-  props: ['type', 'isPrimary', 'circleType'],
+  props: ['type', 'isMsg', 'isPrimary'],
   computed: {
     className() {
-      const { type, isPrimary, circleType } = this
+      const { type, isMsg, isPrimary } = this
       const className = [`weui-icon-${type}`]
-      if (type) {
+      if (isMsg) {
         className.push('weui-icon_msg')
-      } else if (isPrimary)
-        className[0] = 'weui-icon_msg-primary weui-icon-warn'
-      if (circleType) {
-        if (type === 'success') {
-          className[0] = 'weui-icon-success-no-circle'
-        } else if (type === 'info') {
-          className[0] = 'weui-icon-info-circle'
-        }
       }
+      if (isPrimary) className[0] = 'weui-icon_msg-primary weui-icon-warn'
       return className
     }
   }

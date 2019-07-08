@@ -5,10 +5,10 @@
       p.page__desc 图标
     .page__bd.page__bd_spacing
       weui-icon-box(v-for = '(item,index) of items' :key = 'index')
-        weui-icon(:type='item.logo' )
-        weui-icon(v-if='item.title==="普通警告"' isPrimary='true')
-        weui-icon-box-ctn(:title='item.title' :desc='item.desc')
-      weui-icon-sp-area
+        weui-icon(:type='item.logo' :isMsg='!item.isPrimary' :isPrimary='item.isPrimary')
+        weui-icon-box-ctn(v-bind='item')
+      .icon-sp-area
+        weui-icon(v-for='(item,index) of littleItems' :key = 'index' :type='item') 
 </template>
 <script>
 export default {
@@ -30,7 +30,7 @@ export default {
         {
           title: '普通警告',
           desc: '用于表示操作后将引起一定后果的情况',
-          logo: 'isPrimary'
+          isPrimary: true
         },
         {
           title: '强烈警告',
@@ -38,6 +38,16 @@ export default {
           logo: 'warn'
         },
         { title: '等待', desc: '用于表示等待', logo: 'waiting' }
+      ],
+      littleItems: [
+        'success',
+        'success-no-circle',
+        'circle',
+        'warn',
+        'download',
+        'info-circle',
+        'cancel',
+        'search'
       ],
       isShown: true
     }
