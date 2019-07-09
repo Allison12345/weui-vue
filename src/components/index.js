@@ -45,6 +45,8 @@ import WeuiLoadmore from './weui-loadmore'
 import WeuiLoadmoreLine from './weui-loadmore-line'
 import WeuiLoadmoreDot from './weui-loadmore-dot'
 import WeuiIcon from './weui-icon'
+import WeuiPanelAccess from './weui-panel-access'
+import WeuiMediaBox from './weui-media-box'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -92,7 +94,9 @@ const components = [
   WeuiLoadmore,
   WeuiLoadmoreLine,
   WeuiLoadmoreDot,
-  WeuiIcon
+  WeuiIcon,
+  WeuiPanelAccess,
+  WeuiMediaBox
 ]
 
 const install = Vue => {

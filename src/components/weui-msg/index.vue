@@ -10,6 +10,7 @@
     .weui-msg__ips-area
       p.weui-msg__tips {{MSG_RESULT.detail}}
 </template>
+
 <script>
 import { mapGetters } from 'vuex'
 import { MSG_RESULT } from '@/store'

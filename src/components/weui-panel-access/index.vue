@@ -1,8 +1,10 @@
 <template lang="pug">
-  .weui-panel.weui-panel-access
+  .weui-panel(:class='{"weui-panel_access":access}')
     .weui-panel__hd {{hd}}
     .weui-panel__bd
+      slot(name='bd')
     .weui-panel__ft
+      slot(name='hd')
 </template>
 <script>
 export default {
@@ -11,6 +13,7 @@ export default {
     return {
       model: false
     }
-  }
+  },
+  props: ['access', 'hd']
 }
 </script>

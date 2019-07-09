@@ -9,6 +9,8 @@ export const NAV_INDEX = 'NAV_INDEX'
 export const SAVE_NAV_INDEX = 'SAVE_NAV_INDEX'
 export const TABBAR_INDEX = 'TABBAR_INDEX'
 export const SAVE_TABBAR_INDEX = 'SAVE_TABBAR_INDEX'
+export const PANEL_MSG = 'PANEL_MSG'
+export const SAVE_PANEL_MSG = 'SAVE_PANEL_MSG'
 export default new Vuex.Store({
   state: {
     [MSG_RESULT]: {
