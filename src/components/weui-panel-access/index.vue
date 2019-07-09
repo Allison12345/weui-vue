@@ -4,7 +4,7 @@
     .weui-panel__bd
       slot(name='bd')
     .weui-panel__ft
-      slot(name='hd')
+      slot(name='ft')
 </template>
 <script>
 export default {
