@@ -3,23 +3,22 @@
   .page.js_show
     .page__hd
       h1.page_title
-        img(:src='LogoImg' alt='My Weui' height='21px')
+        img(:src='require("@/assets/imgs/IMG_0.png")' :style='{height:"auto",width:"40px"}' alt='My Weui')
       p.page__desc 我的weui样式
     .page__bd.page__bd-spacing
       ul
-        pane(v-for='item of items' :key='item.label' :label='item.label' :icon='item.icon' :items='item.items')
+        pane(v-for='(item,index) of items' :key='item.label' v-bind='item' @click.native='onClick(index)' :isShow='activeIndex===index')
     .page__ft
       a
         img
 </template>
 <script>
-import LogoImg from '@/assets/imgs/logo.png'
 export default {
   name: 'home',
   props: ['src', 'alt'],
   data() {
     return {
-      LogoImg,
+      activeIndex: -1,
       items: [
         {
           label: '表单',
@@ -149,6 +148,12 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    onClick(index) {
+      if (this.activeIndex === index) this.activeIndex = -1
+      else this.activeIndex = index
+    }
   }
 }
 </script>
@@ -195,5 +200,8 @@ export default {
   color: #888;
   text-align: left;
   font-size: 14px;
+}
+ul {
+  list-style: none;
 }
 </style>

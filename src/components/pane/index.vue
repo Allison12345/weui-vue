@@ -1,5 +1,5 @@
 <template lang="pug">
-  li(@click='toggleShow()')
+  li
     .weui-flex.pane-hd
       p.weui-flex__item {{label}}
       img.pane-img(:src='src')
@@ -10,19 +10,11 @@
 <script>
 export default {
   name: 'pane',
-  props: ['label', 'icon', 'items'],
-  data() {
-    return {
-      isShow: false
-    }
-  },
+  props: ['label', 'icon', 'items', 'isShow'],
   methods: {
     onClick(path) {
       console.log(path)
       this.$router.push(path)
-    },
-    toggleShow() {
-      this.isShow = !this.isShow
     }
   },
   computed: {
