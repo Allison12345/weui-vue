@@ -47,6 +47,8 @@ import WeuiLoadmoreDot from './weui-loadmore-dot'
 import WeuiIcon from './weui-icon'
 import WeuiPanelAccess from './weui-panel-access'
 import WeuiMediaBox from './weui-media-box'
+import WeuiFormPreview from './weui-form-preview'
+import WeuiFormPreviewItem from './weui-form-preview__item'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -96,7 +98,9 @@ const components = [
   WeuiLoadmoreDot,
   WeuiIcon,
   WeuiPanelAccess,
-  WeuiMediaBox
+  WeuiMediaBox,
+  WeuiFormPreview,
+  WeuiFormPreviewItem
 ]
 
 const install = Vue => {
