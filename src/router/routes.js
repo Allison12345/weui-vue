@@ -22,7 +22,7 @@ import weuiMyIcons from '@/pages/myIcons'
 import weuiLoadMore from '@/pages/loadMore'
 import weuiMyPanel from '@/pages/myPanel'
 import weuiPreview from '@/pages/preview'
-import weuiPrgress from '@/pages/progress'
+import weuiMyProgress from '@/pages/progress'
 import weuiPanelMsg from '@/pages/panelMsg'
 const routes = [
   {
@@ -123,7 +123,7 @@ const routes = [
   },
   {
     path: '/progress',
-    component: weuiPrgress
+    component: weuiMyProgress
   },
   {
     path: '/panelMsg',

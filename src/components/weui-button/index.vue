@@ -8,16 +8,17 @@
 export default {
   name: 'weui-button',
   // type: primary/default/warn
-  props: ['type', 'loading', 'disabled', 'plain', 'mini', 'id'],
+  props: ['type', 'loading', 'disabled', 'plain', 'mini', 'id', 'primary'],
   computed: {
     className() {
-      const { type, loading, disabled, plain, mini } = this
+      const { type, loading, disabled, plain, mini, primary } = this
       return {
         [`weui-btn_${type}`]: true,
         'weui-btn-loading': loading,
         'weui-btn_disabled': disabled,
         [`weui-btn_plain-${type}`]: plain,
-        'weui-btn_mini': mini
+        'weui-btn_mini': mini,
+        'weui-btn_primary': primary
       }
     }
   },

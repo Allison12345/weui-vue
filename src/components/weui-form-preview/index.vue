@@ -2,18 +2,17 @@
   .weui-form-preview(v-if='isShown')
     .weui-form-preview__hd
       .weui-form-preview-item
-        label.weui-form-preview__label 付款金额
-        em.weui-form-preview__value ¥24000
+        label.weui-form-preview__label {{label}}
+        em.weui-form-preview__value {{value}}
     .weui-form-preview__bd
-      weui-form-preview-item(:title='title' :desc='desc')
-      weui-form-preview-item(:title='title' :desc='desc')
+      weui-form-preview-item(v-for='(item,index) of list' v-bind='item' :key='index')
     .weui-form-preview__ft
       .weui-form-preview__btn.weui-from-preview__btn_primary(@click='onClick()') 删除
 </template>
 <script>
 export default {
   name: 'weui-form-preview',
-  props: ['title', 'desc'],
+  props: ['label', 'value', 'list'],
   data() {
     return {
       isShown: true

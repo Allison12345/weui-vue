@@ -49,6 +49,7 @@ import WeuiPanelAccess from './weui-panel-access'
 import WeuiMediaBox from './weui-media-box'
 import WeuiFormPreview from './weui-form-preview'
 import WeuiFormPreviewItem from './weui-form-preview__item'
+import WeuiProgress from './weui-progress'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -100,7 +101,8 @@ const components = [
   WeuiPanelAccess,
   WeuiMediaBox,
   WeuiFormPreview,
-  WeuiFormPreviewItem
+  WeuiFormPreviewItem,
+  WeuiProgress
 ]
 
 const install = Vue => {
