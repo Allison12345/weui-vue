@@ -21,12 +21,17 @@ export default new Vuex.Store({
       detail: ''
     },
     [NAV_INDEX]: 0,
-    [TABBAR_INDEX]: 0
+    [TABBAR_INDEX]: 0,
+    [PANEL_MSG]: {
+      title: '',
+      desc: ''
+    }
   },
   getters: {
     [MSG_RESULT]: state => state[MSG_RESULT],
     [NAV_INDEX]: state => state[NAV_INDEX],
-    [TABBAR_INDEX]: state => state[TABBAR_INDEX]
+    [TABBAR_INDEX]: state => state[TABBAR_INDEX],
+    [PANEL_MSG]: state => state[PANEL_MSG]
   },
   mutations: {
     [SAVE_MSG_RESULT](state, data) {
@@ -37,6 +42,9 @@ export default new Vuex.Store({
     },
     [SAVE_TABBAR_INDEX](state, index) {
       state[TABBAR_INDEX] = index
+    },
+    [SAVE_PANEL_MSG](state, box) {
+      state[PANEL_MSG] = box
     }
   }
 })

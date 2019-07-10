@@ -24,7 +24,8 @@ export default {
     'selects',
     'selectss',
     'swiped',
-    'bdStyle'
+    'bdStyle',
+    'example'
   ],
   methods: {
     onClick() {
@@ -41,7 +42,8 @@ export default {
         select,
         selects,
         selectss,
-        swiped
+        swiped,
+        example
       } = this
       return {
         'weui-cell_access': access,
@@ -51,7 +53,8 @@ export default {
         'weui-cell_select weui-cell_select-before': select,
         'weui-cell_select': selects,
         'weui-cell_select weui-cell_select-after': selectss,
-        'weui-cell_swiped': swiped
+        'weui-cell_swiped': swiped,
+        'weui-cell_access weui-cell_example': example
       }
     }
   }
