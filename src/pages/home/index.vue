@@ -3,7 +3,7 @@
   .page.js_show
     .page__hd
       h1.page_title
-        img(:src='require("@/assets/imgs/IMG_0.png")' :style='{height:"auto",width:"40px"}' alt='My Weui')
+        img(:src='require("@/assets/imgs/IMG_8034.png")' :style='{height:"auto",width:"60px"}' alt='My Weui')
       p.page__desc 我的weui样式
     .page__bd.page__bd-spacing
       ul
@@ -151,8 +151,9 @@ export default {
   },
   methods: {
     onClick(index) {
-      if (this.activeIndex === index) this.activeIndex = -1
-      else this.activeIndex = index
+      if (this.activeIndex === index) {
+        this.activeIndex = -1
+      } else this.activeIndex = index
     }
   }
 }
@@ -174,7 +175,8 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #f8f8f8;
+  box-sizing: border-box;
+  background-color: #ededed;
 }
 .page.js_show {
   opacity: 1;
@@ -183,7 +185,7 @@ export default {
   padding: 40px;
 }
 .page__bd-spacing {
-  padding: 0 15px;
+  padding: 0 16px;
 }
 .page__ft {
   padding-top: 40px;
