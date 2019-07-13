@@ -50,6 +50,7 @@ import WeuiMediaBox from './weui-media-box'
 import WeuiFormPreview from './weui-form-preview'
 import WeuiFormPreviewItem from './weui-form-preview__item'
 import WeuiProgress from './weui-progress'
+import WeuiPicker from './weui-picker'
 const components = [
   WeuiButton,
   WeuiInput,
@@ -102,7 +103,8 @@ const components = [
   WeuiMediaBox,
   WeuiFormPreview,
   WeuiFormPreviewItem,
-  WeuiProgress
+  WeuiProgress,
+  WeuiPicker
 ]
 
 const install = Vue => {

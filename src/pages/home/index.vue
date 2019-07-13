@@ -115,6 +115,10 @@ export default {
             {
               label: 'Toast',
               path: 'toast'
+            },
+            {
+              label: 'Picker',
+              path: 'picker'
             }
           ]
         },

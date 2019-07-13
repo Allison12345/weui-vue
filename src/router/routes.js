@@ -24,6 +24,7 @@ import weuiMyPanel from '@/pages/myPanel'
 import weuiPreview from '@/pages/preview'
 import weuiMyProgress from '@/pages/progress'
 import weuiPanelMsg from '@/pages/panelMsg'
+import weuiPicker from '@/pages/picker'
 const routes = [
   {
     path: '/',
@@ -128,6 +129,10 @@ const routes = [
   {
     path: '/panelMsg',
     component: weuiPanelMsg
+  },
+  {
+    path: '/picker',
+    component: weuiPicker
   }
 ]
 
