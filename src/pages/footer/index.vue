@@ -1,9 +1,6 @@
 <template lang="pug">
-  .page.footer
-    .page__hd
-      .page__title Title
-      .page__desc 页脚
-    .page__bd.page__bd-spacing
+  page.footer(title='Title' desc='页脚' spacing='true')
+    template(slot='bd')
       .weui-footer
         p.weui-footer__text Copyright © 2008-2016 weui.io
         br

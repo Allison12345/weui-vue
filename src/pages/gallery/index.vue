@@ -1,9 +1,6 @@
 <template lang="pug">
-  .page.gallery
-    .page__hd
-      h1.page__title Gallery
-      p.page__desc 上传图片
-    weui-gallery(:imgs='imgs')
+  page.gallery(title='Gallery' desc='上传图片')
+      weui-gallery(:imgs='imgs' slot='bd')
 </template>
 <script>
 export default {

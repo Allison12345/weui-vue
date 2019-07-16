@@ -1,14 +1,11 @@
 <template lang="pug">
-  .page.msg
-    .page__hd
-      h1.page__title msg
-      p.page__desc 提示页
-    .page__bd.page__bd_spacing
+  page.msg(title='msg' desc='提示页' spacing='true')
+    template(slot='bd')
       weui-button(type='default' @click='onClick(0)') 成功提示页
       weui-button(type='default' @click='onClick(1)') 失败提示页
       weui-button(type='default' @click='onClick(2)') 无图标提示页
       weui-button(type='default' @click='onClick(3)') 无图标提示页
-    .page__ft.j_bottom
+    .j_bottom(slot='ft')
 </template>
 
 <script>

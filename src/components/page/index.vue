@@ -1,16 +1,18 @@
 <template lang="pug">
-div
-  .page.js_show
+  .page
     .page__hd
       slot(name='hd')
-    .page__bd
+        .page__title {{title}}
+        .page__desc {{desc}}
+    .page__bd(:class='{"page__bd_spacing":spacing}')
       slot(name='bd')
     .page__ft
       slot(name='ft')
 </template>
 <script>
 export default {
-  name: 'page'
+  name: 'page',
+  props: ['title', 'desc', 'spacing']
 }
 </script>
 <style>

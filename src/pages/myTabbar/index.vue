@@ -1,6 +1,6 @@
 <template lang="pug">
-  .page.tabbar
-    .page__bd(:style="{height: '100%'}")
+  page.tabbar
+    template(:style="{height: '100%'}" slot='bd')
       .weui-tab
         .weui-tab__panel {{TABBAR_INDEX}}
         weui-tabbar(:items='items')

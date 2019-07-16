@@ -1,11 +1,8 @@
 <template lang="pug">
-  .page.dialog
-    .page__hd
-      h1.page__title Dialog
-      p.page__desc 对话框
-    .page__bd.page__bd_spacing
-      weui-button(type='default' @click='isShown=true;type="confirm"') iOS Dialog样式一
-      weui-button(type='default' @click='isShown=true;type="alert"') iOS Dialog样式二
+page.dialog(title='Dialog' desc='对话框' spacing='true')
+  template(slot='bd')
+    weui-button(type='default' @click='isShown=true;type="confirm"') iOS Dialog样式一
+    weui-button(type='default' @click='isShown=true;type="alert"') iOS Dialog样式二
     weui-mask(v-if='isShown')
       weui-dialog(:type='type' title='弹窗标题' content='弹窗内容' cancelTxt="取消" confirmTxt='确认' @cancel='onCancel' @confirm='onConfirm')
 </template>

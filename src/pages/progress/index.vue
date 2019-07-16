@@ -1,10 +1,6 @@
 <template lang="pug">
-  .page.progress
-    .page__hd
-      h1.page__title progress
-      p.page__desc 进度条
-    .page__bd.page__bd_spacing
-      weui-progress
+  .page.progress(title='progress' desc='进度条' spacing='true')
+    weui-progress(slot='bd')
 </template>
 <script>
 export default {

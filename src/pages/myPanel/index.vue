@@ -1,9 +1,6 @@
 <template lang="pug">
-  .page.panel
-    .page__hd
-      .page__title Panel
-      .page__desc 面板
-    .page__bd
+  page.panel(title='Panel' desc='面板')
+    template(slot='bd')
       weui-panel-access(v-for='(item,index) of items' :key='index' v-bind='item')
         template(slot='bd')
           weui-media-box(v-for='(box,key) of item.boxes' :key='key' v-bind='box' :type='item.type' @click.native='onClick(box)')

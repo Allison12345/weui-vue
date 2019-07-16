@@ -1,13 +1,10 @@
 <template lang="pug">
-  .page.picker
-    .page__hd
-      .page__title Picker
-      .page__desc 多列选择器 配合js实现
-    .page__bd.page__bd_spacing
+  page.picker(title='Picker' desc='多列选择器 配合js实现' spacing='true')
+    template(slot='bd')
       a.weui-btn.weui-btn_default(@click='isShownSingle = !isShownSingle') 单项选择器
       a.weui-btn.weui-btn_default(@click='isShowMul = !isShowMul') 日期选择器
-    weui-picker(v-if='isShownSingle' :selectedIndex='sigSelIndex' :items='singelItems' @confirm='isShownSingle = false' @cancel='isShownSingle = false')
-    weui-picker(v-if='isShowMul' :selectedIndex='mulSelIndex' :items='mulItems' @confirm='isShowMul = false' @cancel='isShowMul = false')
+      weui-picker(v-if='isShownSingle' :selectedIndex='sigSelIndex' :items='singelItems' @confirm='isShownSingle = false' @cancel='isShownSingle = false')
+      weui-picker(v-if='isShowMul' :selectedIndex='mulSelIndex' :items='mulItems' @confirm='isShowMul = false' @cancel='isShowMul = false')
 </template>
 <script>
 export default {
@@ -31,7 +28,11 @@ export default {
           .map((item, index) => `${index + 1}日`)
       ]
     }
-  },
-  methods: {}
+  }
 }
 </script>
+<style>
+.picker {
+  background-color: #fff;
+}
+</style>

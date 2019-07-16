@@ -1,11 +1,6 @@
 <template lang="pug">
-  .page 
-    .page__hd 
-      h1.page__tittle {{PANEL_MSG.title}}
-      p.page__desc {{PANEL_MSG.desc}}
-    .page__bd
-      weui-button(type='primary' @click='onClick()') 返回
-
+  page(:title='PANEL_MSG.title' :desc='PANEL_MSG.desc')
+      weui-button(type='primary' @click='onClick()' slot='bd') 返回
 </template>
 <script>
 import { mapGetters } from 'vuex'

@@ -1,9 +1,6 @@
 <template lang="pug">
-  .page.icons
-    .page__hd
-      h1.page__title icons
-      p.page__desc 图标
-    .page__bd.page__bd_spacing
+  page.icons(title='提示页' desc='图标' spacing='true')
+    template(slot='bd')
       weui-icon-box(v-for = '(item,index) of items' :key = 'index')
         weui-icon(:type='item.logo' :isMsg='!item.isPrimary' :isPrimary='item.isPrimary')
         weui-icon-box-ctn(v-bind='item')

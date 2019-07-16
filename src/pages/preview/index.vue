@@ -1,10 +1,6 @@
 <template lang="pug">
-  .page.preview
-    .page__hd
-      h1.page__title Preview
-        p.page__desc 表单预览
-    .page__bd
-      weui-form-preview(v-for='(item,index) of items' :key='index' v-bind='item')
+  page.preview(title='Preview' desc='表单预览')
+    weui-form-preview(v-for='(item,index) of items' :key='index' v-bind='item' slot='bd')
 </template>
 <script>
 export default {

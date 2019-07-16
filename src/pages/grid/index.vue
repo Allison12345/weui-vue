@@ -1,9 +1,6 @@
 <template lang="pug">
-  .page.grid
-    .page__hd
-      h1.page__title 九宫格
-      p.page__desc Grid
-    weui-grids(:items='items')
+  page.grid(title='九宫格' desc='Grid')
+    weui-grids(:items='items' slot='bd')
 </template>
 <script>
 export default {
