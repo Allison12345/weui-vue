@@ -1,30 +1,27 @@
 <template lang="pug">
-  .weui-gallery(:style="{display: 'block'}")
-    span.weui-gallery__img
-      img(v-for='(img,index) of imgs' :src="img" :key="index" :style="{width: '100%', height: '100%'} ")
-    .weui-gallery__opr
+  .weui-gallery(:style="{display: 'block'}" @touchstart='onTouchstart' @touchend='onTouchend')
+    span.weui-gallery__img(:style="{width: '100%', height: 'auto', backgroundImage: `url(${img})`} ")
+    .weui-gallery__opr(@click='$emit("delete")')
       a.weui-gallery__del
         i.weui-icon-delete.weui-icon_gallery-delete
 </template>
+
 <script>
 export default {
   name: 'weui-gallery',
-  props: ['imgs'],
+  props: ['img'],
   data() {
     return {
-      index: 0
+      startX: 0
+    }
+  },
+  methods: {
+    onTouchstart(event) {
+      this.startX = event.changedTouches[0].clientX
+    },
+    onTouchend(event) {
+      this.$emit('move', event.changedTouches[0].clientX > this.startX)
     }
   }
 }
 </script>
-<style>
-.weui-gallery__img {
-  position: absolute;
-  top: env(safe-area-inset-top);
-  right: env(safe-area-inset-right);
-  bottom: calc(60px + env(safe-area-inset-bottom));
-  left: env(safe-area-inset-left);
-  background: center center no-repeat;
-  background-size: contain;
-}
-</style>
