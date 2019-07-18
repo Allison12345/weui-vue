@@ -21,8 +21,6 @@ import Pane from './pane'
 import WeuiSlider from './weui-slider'
 import WeuiSliderBox from './weui-slider-box'
 import WeuiUploader from './wuei-uploader'
-import WeuiUploaderInfo from './weui-uploader-info'
-import WeuiUploaderFiles from './weui-uploader-files'
 import Page from './page'
 import WeuiArticle from './weui-article'
 import WeuiActionSheet from './weui-actionsheet'
@@ -75,8 +73,6 @@ const components = [
   WeuiSlider,
   WeuiSliderBox,
   WeuiUploader,
-  WeuiUploaderInfo,
-  WeuiUploaderFiles,
   Page,
   WeuiArticle,
   WeuiActionSheet,
