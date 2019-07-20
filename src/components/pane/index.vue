@@ -41,7 +41,7 @@ export default {
   width: 30px;
   height: 30px;
 }
-.page .page__bd li {
+.page.home .page__bd li {
   margin: 8px 0;
   background-color: #fff;
   overflow: hidden;

@@ -1,6 +1,6 @@
 <template lang="pug">
 .container
-  .page.js_show
+  .page.home.js_show
     .page__hd
       h1.page_title
         img(:src='require("@/assets/imgs/IMG_8034.png")' :style='{height:"auto",width:"60px"}' alt='My Weui')

@@ -2,7 +2,7 @@
   .weui-uploader
     .weui-uploader__hd
       p.weui-uploader__title {{title}}
-      .weui-uploader__info progerss
+      .weui-uploader__info {{imgs.length}}/{{max}}
     .weui-uploader__bd
       ul.weui-uploader__files
         li.weui-uploader__file(v-for='(img,key) of imgs' :key='key' :style='{backgroundImage:`url(${img})`}' @click='$emit("click",key)')
