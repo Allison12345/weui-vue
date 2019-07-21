@@ -1,24 +1,21 @@
 <template lang="pug">
-.container
-  .page.home.js_show
-    .page__hd
+  page.home.js_show(desc='我的weui样式' spacing='spacing')
+    template(slot='hd')
       h1.page_title
         img(:src='require("@/assets/imgs/IMG_8034.png")' :style='{height:"auto",width:"60px"}' alt='My Weui')
       p.page__desc 我的weui样式
-    .page__bd.page__bd-spacing
-      ul
-        pane(v-for='(item,index) of items' :key='item.label' v-bind='item' @click.native='onClick(index)' :isShow='activeIndex===index')
-    .page__ft
-      a
-        img
+    ul(slot='bd')
+      pane(v-for='(item,index) of items' :key='item.label' v-bind='item' @click.native='onClick(index)' :isShow='HOME_ACTIVEINDEX===index')
 </template>
 <script>
+import { HOME_ACTIVEINDEX, SAVE_HOME_ACTIVEINDEX } from '@/store'
+
+import { mapGetters } from 'vuex'
 export default {
   name: 'home',
   props: ['src', 'alt'],
   data() {
     return {
-      activeIndex: -1,
       items: [
         {
           label: '表单',
@@ -155,58 +152,17 @@ export default {
   },
   methods: {
     onClick(index) {
-      if (this.activeIndex === index) {
-        this.activeIndex = -1
-      } else this.activeIndex = index
+      if (this[HOME_ACTIVEINDEX] === index) {
+        this.$store.commit(SAVE_HOME_ACTIVEINDEX, -1)
+      } else {
+        this.$store.commit(SAVE_HOME_ACTIVEINDEX, index)
+      }
     }
-  }
+  },
+  computed: mapGetters([HOME_ACTIVEINDEX])
 }
 </script>
 <style>
-.container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-}
-.page {
-  overflow-y: auto;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  box-sizing: border-box;
-  background-color: #ededed;
-}
-.page.js_show {
-  opacity: 1;
-}
-.page__hd {
-  padding: 40px;
-}
-.page__bd-spacing {
-  padding: 0 16px;
-}
-.page__ft {
-  padding-top: 40px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-.page__title {
-  margin-bottom: 15px;
-  text-align: left;
-  font-weight: 400;
-}
-.page__desc {
-  margin-top: 5px;
-  color: #888;
-  text-align: left;
-  font-size: 14px;
-}
 ul {
   list-style: none;
 }

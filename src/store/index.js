@@ -11,6 +11,8 @@ export const TABBAR_INDEX = 'TABBAR_INDEX'
 export const SAVE_TABBAR_INDEX = 'SAVE_TABBAR_INDEX'
 export const PANEL_MSG = 'PANEL_MSG'
 export const SAVE_PANEL_MSG = 'SAVE_PANEL_MSG'
+export const HOME_ACTIVEINDEX = 'HOME_ACTIVEINDEX'
+export const SAVE_HOME_ACTIVEINDEX = 'SAVE_HOME_ACTIVEINDEX'
 export default new Vuex.Store({
   state: {
     [MSG_RESULT]: {
@@ -25,13 +27,15 @@ export default new Vuex.Store({
     [PANEL_MSG]: {
       title: '',
       desc: ''
-    }
+    },
+    HOME_ACTIVEINDEX: -1
   },
   getters: {
     [MSG_RESULT]: state => state[MSG_RESULT],
     [NAV_INDEX]: state => state[NAV_INDEX],
     [TABBAR_INDEX]: state => state[TABBAR_INDEX],
-    [PANEL_MSG]: state => state[PANEL_MSG]
+    [PANEL_MSG]: state => state[PANEL_MSG],
+    [HOME_ACTIVEINDEX]: state => state[HOME_ACTIVEINDEX]
   },
   mutations: {
     [SAVE_MSG_RESULT](state, data) {
@@ -45,6 +49,9 @@ export default new Vuex.Store({
     },
     [SAVE_PANEL_MSG](state, box) {
       state[PANEL_MSG] = box
+    },
+    [SAVE_HOME_ACTIVEINDEX](state, index) {
+      state[HOME_ACTIVEINDEX] = index
     }
   }
 })

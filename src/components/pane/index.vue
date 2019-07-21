@@ -1,6 +1,6 @@
 <template lang="pug">
   li
-    .weui-flex.pane-hd(@click='changeColor =! changeColor ' :class='{changeColor}')
+    .weui-flex.pane-hd(:class='{changeColor:isShow}')
       p.weui-flex__item {{label}}
       img.pane-img(:src='src')
     .page-category(v-if='isShow')
@@ -11,11 +11,6 @@
 export default {
   name: 'pane',
   props: ['label', 'icon', 'items', 'isShow'],
-  data() {
-    return {
-      changeColor: false
-    }
-  },
   methods: {
     onClick(path) {
       console.log(path)
