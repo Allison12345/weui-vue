@@ -1,9 +1,7 @@
 <template lang="pug">
   .weui-form-preview(v-if='isShown')
     .weui-form-preview__hd
-      .weui-form-preview-item
-        label.weui-form-preview__label {{label}}
-        em.weui-form-preview__value {{value}}
+       weui-form-preview-item(:title='label' :desc='value' )
     .weui-form-preview__bd
       weui-form-preview-item(v-for='(item,index) of list' v-bind='item' :key='index')
     .weui-form-preview__ft
